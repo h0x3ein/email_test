@@ -7,8 +7,8 @@ jobs:
     steps:        
        - uses: actions/checkout@master
        - name: Run TruffleHog
-         uses: trufflesecurity/trufflehog-action@v3
+         uses: trufflesecurity/trufflehog@v3
          with:
           path: .
           flags: "--regex --config regexes.json"
-           
+       
