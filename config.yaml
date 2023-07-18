@@ -1,0 +1,7 @@
+detectors:
+  - name: custom-email-detector
+    keywords:
+      - email
+    regex:
+      email: '\\w*\\.\\w*@nobitex\\.com'
+

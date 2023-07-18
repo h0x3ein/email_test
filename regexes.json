@@ -1,8 +1,0 @@
-{
-  "regexes": [
-    {
-      "name": "Work email",
-      "regex": "\\w*\\.\\w*@nobitext\\.com"
-    }
-  ]
-}
