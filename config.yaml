@@ -4,8 +4,3 @@ detectors:
       - email
     regex:
       email: "\\w*\\.\\w*@nobitex\\.com"
-  - name: private-key-detector
-    keywords:
-      - private
-    regex:
-      private: " PRIVATE KEY-----"
