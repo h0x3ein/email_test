@@ -1,3 +1,3 @@
 rules:
-  - regex: "\\w*\\.\\w*@fakemail\\.com"
+  - pattern: "\\w*\\.\\w*@fakemail\\.com"
     description: "Work email"
