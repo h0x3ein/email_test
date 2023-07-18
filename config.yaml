@@ -1,6 +1,4 @@
 detectors:
   - name: custom-email-detector
-    keywords:
-      - email
     regex:
-      emai: "\\w*\\.\\w*@fakemail\\.com"
+      email: "\\w*\\.\\w*@fakemail\\.com"
