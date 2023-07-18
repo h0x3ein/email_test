@@ -7,9 +7,8 @@ jobs:
     steps:        
        - uses: actions/checkout@master
        - name: Run TruffleHog
-         uses: trufflesecurity/trufflehog@v3.44.0
+         uses: trufflesecurity/trufflehog@v1
          with:
-          path: ./
-          config: config.yaml 
-          #extra_args: "--regex --config config.yaml"
+          path: .
+          extra_args: "--regex --config config.yaml"
        
