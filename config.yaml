@@ -3,4 +3,4 @@ detectors:
     keywords:
       - email
     regex:
-      email: '\\w*\\.\\w*@fakemail\\.com'
+      email: "\w*\.\w*@fakemail\.com'
