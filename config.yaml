@@ -1,3 +1,6 @@
-rules:
-  - pattern: "\\w*\\.\\w*@fakemail\\.com"
-    description: "Work email"
+detectors:
+  - name: custom-email-detector
+    keywords:
+      - email
+    regex:
+      email: '\\w*\\.\\w*@fakemail\\.com'
