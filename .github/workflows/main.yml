@@ -10,5 +10,5 @@ jobs:
          uses: trufflesecurity/trufflehog@v3.44.0
          with:
           path: .
-          extra_args: "--regex --config config.yaml"
+          extra_args: "--regex --config config.yaml --verbose"
        
