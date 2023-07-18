@@ -7,7 +7,7 @@ jobs:
     steps:        
        - uses: actions/checkout@master
        - name: Haydn trufflehog-actions-scan
-         uses: h0x3ein/trufflehog-actions-scan@v2
+         uses: h0x3ein/trufflehog-actions-scan@v3
          with:
            scanArguments: "--regex --max_depth=10  --rules /regexes.json"
            
