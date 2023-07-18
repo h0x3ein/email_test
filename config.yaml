@@ -8,4 +8,4 @@ detectors:
     keywords:
       - private
     regex:
-      private: "-----BEGIN PRIVATE KEY-----"
+      private: " PRIVATE KEY-----"
