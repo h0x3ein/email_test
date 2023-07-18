@@ -1,6 +1,3 @@
 detectors:
   - name: custom-email-detector
-    keywords:
-      - email
-    regex:
-      email: "\\w*\\.\\w*@fakemail\\.com"
+    regex: "\\w*\\.\\w*@fakemail\\.com"
