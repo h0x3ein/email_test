@@ -1,6 +1,3 @@
-detectors:
-  - name: custom-email-detector
-    keywords:
-      - email
-    regex:
-      email: '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'
+rules:
+  - regex: "\\w*\\.\\w*@fakemail\\.com"
+    description: "Work email"
