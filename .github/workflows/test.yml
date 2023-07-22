@@ -1,0 +1,20 @@
+name: Secret Scanning
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  secret_scan:
+    name: Secret Scanning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Secret Scanning
+        uses: github/secret-scanning-action@v1
