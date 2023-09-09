@@ -15,7 +15,7 @@ jobs:
         # step 2
         - name: full scan
           run: |
-            semgrep --config="auto" | tee report.json
+                 semgrep --json --config="auto" | jq . | tee report.json
 
         # step 3
         
