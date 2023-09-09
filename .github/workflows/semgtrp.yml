@@ -17,16 +17,9 @@ jobs:
           run: |
                  semgrep --json --config="auto" | jq . | tee report.json
 
-        # step 3
-        
-        - name: save report as pipeline artifact
-          uses: actions/upload-artifact@v3
-          with:
-            name: report.json
-            path: report.json
-            
-        # step 4
-        - name: Download report
-          uses: actions/download-artifact@v3
-          with: 
-            name: report.json
+        - name: Fail if Semgrep findings
+          run: |
+            if [ -s semgrep-results.json ]; then
+              echo "Semgrep findings detected. Failing the workflow."
+              exit 1
+            fi
