@@ -16,7 +16,7 @@ jobs:
         - name: full scan
           run: |
             semgrep \
-              --sarif --output report.sarif \
+              --json --output report.json \
               --config="auto"
 
         # step 3
