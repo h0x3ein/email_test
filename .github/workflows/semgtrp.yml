@@ -19,7 +19,7 @@ jobs:
 
         - name: Fail if Semgrep findings
           run: |
-            if [ -s semgrep-results.json ]; then
+            if [ -s report.json ]; then
               echo "Semgrep findings detected. Failing the workflow."
               exit 1
             fi
